@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="APCS_Final"
+run/main_scene="res://Experiment.tscn"
 config/icon="res://icon.png"
 
 [physics]
