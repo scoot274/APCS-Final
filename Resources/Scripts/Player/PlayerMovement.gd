@@ -11,10 +11,34 @@ func _physics_process(delta):
 			#Calculate Y strength
 			Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 		)
+
 	if(movement.length() > 1.0): 
 		movement = movement.normalized()
 	move_and_slide(movement * speed * delta)
+	
+	if(Input.is_action_just_pressed("ui_select")):
+		dash(movement)
+		pass
 	pass 
+
+func dash(Movement):
+	var dashStrength
+	var dashSpeed = 5000
+
+	dashStrength = Vector2 (
+		Movement.x,
+		Movement.y
+	)
+
+	if(dashStrength == Vector2(0, 0)): 
+		dashStrength = Vector2(
+			1,
+			0
+		)
+		pass
+		
+	move_and_slide(dashStrength * speed)
+	pass
 
 func _ready():
 	print_debug("Player instance created and initialized") 
