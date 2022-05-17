@@ -3,6 +3,7 @@ extends KinematicBody2D
 # Instantiate velocity variables
 export (int) var speed = 200 # Export speed to make it accesible in the editor for debugging purposes
 var velocity = Vector2.ZERO # velocity = (0, 0)
+export(int) var dashSpeed = 150000
 
 func _physics_process(delta):
 	var movement = Vector2(
@@ -23,7 +24,6 @@ func _physics_process(delta):
 
 func dash(Movement):
 	var dashStrength
-	var dashSpeed = 5000
 
 	dashStrength = Vector2 (
 		Movement.x,
@@ -31,13 +31,10 @@ func dash(Movement):
 	)
 
 	if(dashStrength == Vector2(0, 0)): 
-		dashStrength = Vector2(
-			1,
-			0
-		)
+		dashStrength = Vector2(1,0)
 		pass
 		
-	move_and_slide(dashStrength * speed)
+	move_and_slide(dashStrength * dashSpeed)
 	pass
 
 func _ready():
