@@ -409,9 +409,10 @@ tile_data = PoolIntArray( -65536, 3, 0, -65535, 3, 0, -65534, 3, 0, -65533, 3, 0
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 520, 368 )
-speed = 15000
-dashSpeed = 8000
 
 [node name="EnemySpawnManager" type="Node2D" parent="."]
 script = ExtResource( 4 )
 enemies = [ ExtResource( 5 ) ]
+
+[node name="Enemy" parent="." instance=ExtResource( 5 )]
+position = Vector2( 520, 248 )

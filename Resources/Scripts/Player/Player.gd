@@ -1,9 +1,9 @@
 extends KinematicBody2D
 
 # Instantiate velocity variables
-export (int) var speed = 200 # Export speed to make it accesible in the editor for debugging purposes
+export (int) var speed = 15000 # Export speed to make it accesible in the editor for debugging purposes
 var velocity = Vector2.ZERO # velocity = (0, 0)
-export(int) var dashSpeed = 150000
+export(int) var dashSpeed = 8000
 
 func _physics_process(delta):
 	var movement = Vector2(
