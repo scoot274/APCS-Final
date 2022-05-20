@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/APCS_final_playerconcept.png-1170fe4043861b65b24c562bff54fa2e.stex"
+path="res://.import/Blob.png-28fd91ad16c9411c3bfbf89064f5d301.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Sprites/APCS_final_playerconcept.png"
-dest_files=[ "res://.import/APCS_final_playerconcept.png-1170fe4043861b65b24c562bff54fa2e.stex" ]
+source_file="res://Resources/Sprites/Enemies/Blob.png"
+dest_files=[ "res://.import/Blob.png-28fd91ad16c9411c3bfbf89064f5d301.stex" ]
 
 [params]
 
