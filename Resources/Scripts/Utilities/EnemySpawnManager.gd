@@ -10,6 +10,9 @@ func _ready():
 	# var enemyscene = load("res://Blob.tscn")
 	# var enemy = enemyscene.instance()
 
+
+
+
 	screen_size = get_viewport().get_visible_rect().size
 	# TODO fix enemies spawning in walls/out of map
 
